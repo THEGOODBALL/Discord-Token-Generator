@@ -13,7 +13,11 @@ try:
     import hashlib
 except Exception as e:
     print(e)
- 
+
+if not os.getenv('reqs_installed'):
+    subprocess.Popen(['start', 'start.bat'], shell=True)
+    sys.exit()
+
 System.Title("Discord Token Generator")
 dcg = """
               ⌜――――――――――――――――――――――――――――――――――――――――――――――――――――――――⌝
@@ -250,10 +254,6 @@ class Booster:
             except Exception as e:
                 print(e)
                 continue
-
-if not os.getenv('reqs_installed'):
-    subprocess.Popen(['start', 'start.bat'], shell=True)
-    sys.exit()
 
 if __name__ == "__main__":
     os.system('cls' if os.name == 'nt' else 'clear')
