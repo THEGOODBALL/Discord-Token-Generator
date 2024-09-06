@@ -19,16 +19,6 @@ if not os.getenv('reqs_installed'):
     sys.exit()
 
 System.Title("Discord Token Generator")
-dcg = """
-              ⌜――――――――――――――――――――――――――――――――――――――――――――――――――――――――⌝
-              ┇         [Telegram] https://t.me/discord_gen            ┇
-              ┇         [Github]  https://github.com/discord_gen       ┇
-              ⌞――――――――――――――――――――――――――――――――――――――――――――――――――――――――⌟
-
-
-
-                              › Press Enter...
-"""
 dcggen = """
                                       
       ▄██████▄     ▄████████ ███▄▄▄▄      ▄████████    ▄████████    ▄████████     ███      ▄██████▄     ▄████████ 
@@ -43,7 +33,6 @@ dcggen = """
                                                    
                                                    > Press Enter..."""
 System.Size(200,40)
-Anime.Fade(Center.Center(dcg), Colors.rainbow, Colorate.Vertical, interval=0.020, enter=True)
 Anime.Fade(Center.Center(dcggen), Colors.rainbow, Colorate.Vertical, interval=0.020, enter=True)
 
 class Booster:
