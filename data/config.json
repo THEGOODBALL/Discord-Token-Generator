@@ -1,8 +1,7 @@
 {
-    "invite_code": "", 
+    "invite_code": "discord-townhall", 
     "capmonster_key": "",
-    "threads": 10,
-    "online_tokens": true,
-    "token base_name": "GAMER",
-    "password": "GAMERDOC1233#a"
+    "threads": 5,
+    "online_tokens": false,
+    "password": "GAMERD233#a"
 }
