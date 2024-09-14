@@ -159,7 +159,7 @@ class Booster:
                 "captcha_service": "hcaptcha",
                 "captcha_key": captcha_token,
                 "consent": "true",
-                "date_of_birth": "2000-02-13",
+                "date_of_birth": "1997-02-13",
                 "email": f"{email}",
                 "gift_code_sku_id": "null",
                 "invite": self.config['invite_code'],
