@@ -1,5 +1,4 @@
 
-
 <div align="center">
   
   <h2 align="center">Discord Token Generator</h2>
@@ -33,5 +32,4 @@
 
 - I am not responsible for anything that may happen, such as, API Blocking, Account Termination, etc.
 - This **may** slow down your wifi and/or host computer
-
 
